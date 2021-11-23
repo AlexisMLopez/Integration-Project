@@ -1,3 +1,4 @@
+// student class definition
 #include "student.h"
 
 

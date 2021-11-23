@@ -1,3 +1,4 @@
+// professor class definition
 #include "professor.h"
 
 //default Professor Constructor

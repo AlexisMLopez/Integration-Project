@@ -1,3 +1,4 @@
+// student class implementation
 #ifndef STUDENT_H
 #define STUDENT_H
 
