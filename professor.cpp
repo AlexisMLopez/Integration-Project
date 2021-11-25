@@ -37,7 +37,7 @@ void Professor::view_grades(Student student) {                                  
 
 
 // use of iterators on aggregates, using the advance increment to increment the iterator.
-void Professor::set_grades(Student& student) {                                              // passing student object by reference to modify values in student_grades vector in Student class
+void Professor::set_grades(Student& student) {                                              // passing student object by reference to modify values in student_grades 2D array in Student class
 	std::cout << "You are entering grades for " << student.get_name() << "." << std::endl;
 	//int size = sizeof(student.student_grades);
 	for (int i = 0; i < 3; i++) {

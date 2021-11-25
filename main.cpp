@@ -40,7 +40,7 @@ int main()
     
     professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
     
-    //student.view_grades();       
+    student.view_grades();       
    
     professor.view_grades(student);
     
@@ -51,7 +51,7 @@ int main()
     professor_type->user_type();                    // example of polymorphism that goes from User class into Professor class method user_type()
 
 
-    Student student2;           // Creating another student object that will have its own fields including grades
+    Student student2;                               // Creating another student object that will have its own fields including grades
     professor.enter_studentname(student2);
     std::cout << student2.get_name() << std::endl;
     

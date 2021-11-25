@@ -11,7 +11,7 @@ private:
 
 public:
     //std::vector<double> student_grades = { 0,0,0,0,0 };                     
-    double student_grades[3][3] = { {0,0,0},{0,0,0},{0,0,0} };       // 2D Array for storing the course grades
+    double student_grades[3][3] = { {0,0,0},{0,0,0},{0,0,0} };       // 2D Array for storing the course grades of a student
 
     // default student contructor
     Student();
