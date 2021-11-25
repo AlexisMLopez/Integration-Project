@@ -23,24 +23,27 @@
 */
 int main()
 {
-    Student student("Alexis Lopez");               // Creation of an object of the Student class using overloaded constructor
-    Professor professor;                           // Creation of an object of the Professor class using a default constructor
+    Student student;                              // Creation of an object of the Student class using overloaded constructor
+    Professor professor;                          // Creation of an object of the Professor class using a default constructor
 
     // Accessing getters and setters to alter member variables in User class and Student class  
-    std::cout << "Please enter you credentials (UIN)" << std::endl;								    
+    std::cout << "Please enter you credentials (UIN)" << std::endl;			
+    
     std::cout << student.get_idnum() << std::endl;                                                
     student.set_idnum("A123456");                   
     std::cout << student.get_idnum() << std::endl;
 
+    professor.enter_studentname(student);
     std::cout << student.get_name() << std::endl;
-    student.set_name("Not Alexis");
-    std::cout << student.get_name() << std::endl;
-
+    //student.set_name("Not Alexis");
+    //std::cout << student.get_name() << std::endl;
+    
     professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
-
-    //student.view_grades();                                    
-    //professor.view_grades(student);                           
-  
+    
+    //student.view_grades();       
+   
+    professor.view_grades(student);
+    
     // Correctly reason about control flow in a program using dynamic dispatch.
     User* student_type = new Student();
     User* professor_type = new Professor();
@@ -48,15 +51,16 @@ int main()
     professor_type->user_type();                    // example of polymorphism that goes from User class into Professor class method user_type()
 
 
-    Student student2("Student number 2");           // Creating another student object that will have its own fields including grades
+    Student student2;           // Creating another student object that will have its own fields including grades
+    professor.enter_studentname(student2);
     std::cout << student2.get_name() << std::endl;
-
+    
     professor.set_grades(student2);
-    //professor.view_grades(student2);
-
+    
     std::cout << "Proving there are two students:" << std::endl;
+    
     professor.view_grades(student);
     professor.view_grades(student2);
-
+    
     return 0;
 }

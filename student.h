@@ -7,25 +7,24 @@
 class Student : public User // derived student class inherits from User base class
 {
 private:
-    std::string m_name;
-   
+    double gpa;
 
 public:
-    std::vector<double> student_grades = { 0,0,0,0,0 };
+    //std::vector<double> student_grades = { 0,0,0,0,0 };                     
+    double student_grades[3][3] = { {0,0,0},{0,0,0},{0,0,0} };       // 2D Array for storing the course grades
 
     // default student contructor
     Student();
 
     // properties constructor (overloaded)
-    Student(std::string name);
+    //Student(std::string name);
 
 
     // getters and setters
-    std::string get_name();
-    void set_name(std::string name);
 
 
     // member methods
+    
     void view_grades();
     void user_type();
 };
