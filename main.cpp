@@ -23,8 +23,8 @@
 */
 int main()
 {
-    Student student;                              // Creation of an object of the Student class using overloaded constructor
-    Professor professor;                          // Creation of an object of the Professor class using a default constructor
+    Student student;                              // Creation of an object of the Student class using default constructor
+    Professor professor;                          // Creation of an object of the Professor class using default constructor
 
     // Accessing getters and setters to alter member variables in User class and Student class  
     std::cout << "Please enter you credentials (UIN)" << std::endl;			
