@@ -1,7 +1,5 @@
 // student class definition
 #include "student.h"
-
-
 // default constructor
 Student::Student()
 {
@@ -21,7 +19,7 @@ Student::Student(std::string name)
 
 // member methods
 
-void Student::view_grades() {                                               // Unique view_grades method for Student class
+void Student::view_grades() {                                               //view_grades method for Student class
     std::cout << "You are viewing your grades as a Student" << std::endl;
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++)

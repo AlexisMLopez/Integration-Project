@@ -1,4 +1,4 @@
-// course class definition
+// course class definition 
 #include "course.h"
 
 

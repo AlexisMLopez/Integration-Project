@@ -1,4 +1,4 @@
-// User class definition
+// User class definition 
 #include "user.h"
 
 

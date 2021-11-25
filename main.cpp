@@ -2,7 +2,7 @@
 #include "student.h"
 #include "professor.h"
 
-/* OOP vs Procedural/Functional:
+/* OOP vs Procedural/Functional: 
  * Object oriented programming is based all around objects while Procedural is based around functions.
  * OOP has the advantage of having access to Polymorphism, Inheritance, and Encapsulation, which procedural does not.
  * OOP is better suited to mid to large scale coding projects whilst Procedural can be done at the very small scale

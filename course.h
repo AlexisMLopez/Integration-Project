@@ -1,4 +1,4 @@
-// course class implementation
+// course class implementation 
 #ifndef COURSE_H
 #define COURSE_H
 

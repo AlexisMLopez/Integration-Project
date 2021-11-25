@@ -1,4 +1,4 @@
-// professor class implementation
+// professor class implementation 
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
 
