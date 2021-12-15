@@ -93,3 +93,8 @@ Object Oriented Inheritance: Through subtyping this allows us to override the vi
 Other methods to achieve overriding through object oriented inheritance would include using templates.
 
 ## and more! (Covered as comments in the project)
+
+# Errors
+
+![errors](https://user-images.githubusercontent.com/74120068/146282449-cc985643-0159-443d-a897-6b55a01eb352.png)
+
