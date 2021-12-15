@@ -59,4 +59,4 @@ Subtyping: is a type of polymorphism known as inclusion polymorphism. It is acce
 Object Oriented Inheritance: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
 Other methods to achieve overriding through object oriented inheritance would include using templates.
 
-and more!
+### and more! (Covered as comments in the project)
