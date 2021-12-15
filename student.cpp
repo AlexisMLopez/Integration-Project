@@ -26,7 +26,7 @@ Student::Student()
  * Loops through the aggregate structure by utilizing the iterator. 
  * Prints out every element of the vector based on iterator.
 */
-void Student::View_Grades() {                                              
+void Student::ViewGrades() {                                              
 	std::cout << "You are viewing your grades as a Student" << std::endl;
 	for (int i = 0; i < student_grades.size(); i++) {
 		std::cout << student_grades.at(i) << " ";

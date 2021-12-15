@@ -31,11 +31,11 @@ User::User(std::string idnum) : m_idnum(idnum) {
 }
 
 // getters and setters
-std::string User::get_idnum() { return m_idnum; }
-void User::set_idnum(std::string idnum) { m_idnum = idnum; }
+std::string User::GetIdnum() { return m_idnum; }
+void User::SetIdnum(std::string idnum) { m_idnum = idnum; }
 
-std::string User::get_name() { return m_name; }
-void User::set_name(std::string name) { m_name = name; }
+std::string User::GetName() { return m_name; }
+void User::SetName(std::string name) { m_name = name; }
 
 // member methods
 /**

@@ -32,11 +32,11 @@ public:
 	User(std::string idnum);
 
 	// getters and setters
-	std::string get_idnum();
-	void set_idnum(std::string idnum);
+	std::string GetIdnum();
+	void SetIdnum(std::string idnum);
 
-	std::string get_name();
-	void set_name(std::string name);
+	std::string GetName();
+	void SetName(std::string name);
 
 	// member methods
 	// virtual function header makes it so the view_grades function in the User class is overriden and instead executes the subclass versions of view_grades()

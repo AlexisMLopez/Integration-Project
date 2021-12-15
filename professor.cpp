@@ -30,7 +30,7 @@ void Professor::EnterStudentName(Student& student) {
 	std::cout << "Please enter the student's name: ";
 	std::string name;
 	std::cin >> name;
-	student.set_name(name);
+	student.SetName(name);
 }
 
 /**
@@ -56,7 +56,7 @@ void Professor::UserType() {
 */
 //LO7.Define and use iteratorsand other operations on aggregates, including operations that take functions as arguments.
 void Professor::ViewGrades(Student student) {                                               // Unique view_grades method to Professor class
-	std::cout << "You are viewing " << student.get_name() << " grades as a Professor." << std::endl;
+	std::cout << "You are viewing " << student.GetName() << " grades as a Professor." << std::endl;
 	for (int i = 0; i < student.student_grades.size(); i++) {
 		std::cout << student.student_grades.at(i) << " ";
 	}
@@ -74,7 +74,7 @@ void Professor::ViewGrades(Student student) {                                   
 //LO7.Define and use iterators and other operations on aggregates, including operations that take functions as arguments.
 void Professor::SetGrades(Student& student) {                                            
 	double temp = 0;
-	std::cout << "You are entering grades for " << student.get_name() << "." << std::endl;
+	std::cout << "You are entering grades for " << student.GetName() << "." << std::endl;
 	for (int i = 0; i < 4; i++) {
 		std::cin >> temp;
 		student.student_grades[i] = temp;

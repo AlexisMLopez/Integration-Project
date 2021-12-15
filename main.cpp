@@ -74,7 +74,7 @@ int main()
 		while (system_on) {
 			user_input = StudentChoice();
 			if (user_input == 1) {
-				student.View_Grades();
+				student.ViewGrades();
 			}
 			else if (user_input == 2) {
 				professor.CalculateFinalGrade(student);

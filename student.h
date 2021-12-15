@@ -30,7 +30,7 @@ public:
 	Student();
 
 	// member methods
-	void View_Grades();
+	void ViewGrades();
 	void UserType();
 };
 #endif // STUDENT_H
