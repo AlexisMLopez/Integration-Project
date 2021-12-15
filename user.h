@@ -29,7 +29,7 @@ public:
     void set_name(std::string name);
 
     // member methods
-    virtual void user_type() = 0;           // pure virtual function header makes it so the view_grades function in the User class is overriden and instead executes the subclass versions of view_grades()  
+    virtual void user_type();           // pure virtual function header makes it so the view_grades function in the User class is overriden and instead executes the subclass versions of view_grades()  
                                             // Enables us to achieve dynamic dispatch which allows us to select which implementation of a polymorphic function that we want at runtime 
 };
 

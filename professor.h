@@ -29,7 +29,7 @@ public:
 	void view_grades(Student student);
 	void set_grades(Student& student);
 
-	void calculate_GPA();
+	void calculate_GPA(Student& student);
 };
 
 #endif // PROFESSOR_H

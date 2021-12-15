@@ -2,7 +2,7 @@
 #include "student.h"
 #include "professor.h"
 
-/* OOP vs Procedural/Functional: 
+/* OOP vs Procedural/Functional:
  * Object oriented programming is based all around objects while Procedural is based around functions.
  * OOP has the advantage of having access to Polymorphism, Inheritance, and Encapsulation, which procedural does not.
  * OOP is better suited to mid to large scale coding projects whilst Procedural can be done at the very small scale
@@ -18,49 +18,104 @@
 
 /* Explain the relationship between object - oriented inheritance(code - sharing and overriding) and subtyping(the idea of a subtype being usable in a context that expects the supertype).
 *  Subtyping: is a type of polymorphism known as inclusion polymorphism. It is accessing the derived classes through the base classes with pointers and references (virtual functions are an example).
-*  OOI: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance. 
+*  OOI: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
 *  Other methods to achieve overriding through object oriented inheritance would include using templates.
 */
+
+int userChoice();											// prototype of function used for control flow
+
 int main()
 {
-    Student student;                              // Creation of an object of the Student class using default constructor
-    Professor professor;                          // Creation of an object of the Professor class using default constructor
+	Student student;										// Creation of an object of the Student class using default constructor
+	Professor professor;									// Creation of an object of the Professor class using default constructor
 
-    // Accessing getters and setters to alter member variables in User class and Student class  
-    std::cout << "Please enter you credentials (UIN)" << std::endl;			
-    
-    std::cout << student.get_idnum() << std::endl;                                                
-    student.set_idnum("A123456");                   
-    std::cout << student.get_idnum() << std::endl;
+	bool system_on = true;
+	int user_input;
 
-    professor.enter_studentname(student);
-    std::cout << student.get_name() << std::endl;
-    //student.set_name("Not Alexis");
-    //std::cout << student.get_name() << std::endl;
-    
-    professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
-    
-    student.view_grades();       
-   
-    professor.view_grades(student);
-    
-    // Correctly reason about control flow in a program using dynamic dispatch.
-    User* student_type = new Student();
-    User* professor_type = new Professor();
-    student_type->user_type();                      // example of polymorphism that goes from User class into Student class method user_type()
-    professor_type->user_type();                    // example of polymorphism that goes from User class into Professor class method user_type()
+	while (system_on) {
+		user_input = userChoice();
+
+		if (user_input == 1) {
+			professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
+
+		}
+		else if (user_input == 2) {
+			professor.view_grades(student);
+		}
+		else if (user_input == 3) {
+			professor.calculate_GPA(student);
+				
+		}
+		else if (user_input == 4) {
+			system_on = false;
+		}
+		else {
+			std::cout << std::endl;
+			std::cout << "You made an invalid choice, try again" << std::endl;
+		}
+
+	}
+
+	std::cout << "Exiting the program." << std::endl;
+
+	/*
+
+	// Accessing getters and setters to alter member variables in User class and Student class
+
+	std::cout << "Please enter you credentials (UIN)" << std::endl;
+
+	std::cout << student.get_idnum() << std::endl;
+	student.set_idnum("A123456");
+	std::cout << student.get_idnum() << std::endl;
+
+	professor.enter_studentname(student);
+	std::cout << student.get_name() << std::endl;
 
 
-    Student student2;                               // Creating another student object that will have its own fields including grades
-    professor.enter_studentname(student2);
-    std::cout << student2.get_name() << std::endl;
-    
-    professor.set_grades(student2);
-    
-    std::cout << "Proving there are two students:" << std::endl;
-    
-    professor.view_grades(student);
-    professor.view_grades(student2);
-    
-    return 0;
+	professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
+
+	student.view_grades();
+
+	professor.view_grades(student);
+
+
+	// Correctly reason about control flow in a program using dynamic dispatch.
+	User user;
+	User& usertype1 = student;                      // example of polymorphism that goes from User class into Student class method user_type()
+	usertype1.user_type();
+	User& usertype2 = professor;                    // example of polymorphism that goes from User class into Professor class method user_type()
+	usertype2.user_type();
+
+
+
+	Student student2;                               // Creating another student object that will have its own fields including grades
+	professor.enter_studentname(student2);
+	std::cout << student2.get_name() << std::endl;
+
+	professor.set_grades(student2);
+
+	std::cout << "Proving there are two students:" << std::endl;
+
+	professor.view_grades(student);
+	professor.view_grades(student2);
+
+	*/
+
+	return 0;
+}
+
+
+
+int userChoice() {
+	int choice;
+	std::cout << "Welcome to the StudentGradebook Program!" << std::endl;
+	std::cout << "Please make a selection:" << std::endl;
+	std::cout << "1: Enter Grades" << std::endl;
+	std::cout << "2: View Grades" << std::endl;
+	std::cout << "3: Calculate GPA of student" << std::endl;
+	std::cout << "4: Exit Program" << std::endl;
+	std::cout << std::endl;
+	std::cin >> choice;
+
+	return choice;
 }

@@ -21,13 +21,10 @@ Student::Student(std::string name)
 
 void Student::view_grades() {                                               //view_grades method for Student class
     std::cout << "You are viewing your grades as a Student" << std::endl;
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++)
-		{
-			std::cout << student_grades[i][j] << " ";
-		}
-		std::cout << std::endl;
+	for (int i = 0; i < student_grades.size(); i++) {
+			std::cout << student_grades[i] << " ";
 	}
+	std::cout << std::endl;
 }
 
 void Student::user_type() {

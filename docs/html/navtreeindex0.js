@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[1,0],
+"class_course.html":[1,0,0],
+"class_professor.html":[1,0,1],
+"class_student.html":[1,0,2],
+"class_user.html":[1,0,3],
+"classes.html":[1,1],
+"course_8h_source.html":[2,0,0,0,0,0,0,0],
+"dir_bbcaf875def2082df368374f5bc73ba3.html":[2,0,0,0,0,0,0],
+"dir_d522931ffa1371640980b621734a4381.html":[2,0,0],
+"dir_e10946f065eab3c37de77162fcf99a68.html":[2,0,0,0,0,0],
+"dir_e9fe87443faea666f4af9a955ee78881.html":[2,0,0,0],
+"dir_fd5fb3bc875023706250d61469f6483b.html":[2,0,0,0,0],
+"files.html":[2,0],
+"hierarchy.html":[1,2],
+"index.html":[],
+"md__c___users_alexi_source_repos__integration__project__r_e_a_d_m_e.html":[0],
+"pages.html":[],
+"professor_8h_source.html":[2,0,0,0,0,0,0,1],
+"student_8h_source.html":[2,0,0,0,0,0,0,2],
+"user_8h_source.html":[2,0,0,0,0,0,0,3]
+};

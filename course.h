@@ -3,7 +3,7 @@
 #define COURSE_H
 
 #include <iostream>
-#include <array>
+#include <vector>
 
 class Course
 {
@@ -12,6 +12,8 @@ private:
 
 public:
     const std::string assignments[4] = { "Quiz", "Exam", "Homework", "Project" };       //constant assignments that cannot be reassigned
+    //std::vector<Professor> professor_list;
+    //std::vector<Student> student_list;
 
     Course();
 
