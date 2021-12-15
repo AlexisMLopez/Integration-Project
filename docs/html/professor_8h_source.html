@@ -85,50 +85,55 @@ $(document).ready(function(){initNavTree('professor_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">professor.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// professor class implementation </span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef PROFESSOR_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define PROFESSOR_H</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;user.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;student.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_professor.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_professor.html">Professor</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_user.html">User</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> quiz_weight = 0.20;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> exam_weight = 0.30;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> homework_weight = 0.25;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> project_weight = 0.25;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">double</span> total_weight;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//default constructor</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_professor.html">Professor</a>();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// member methods</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> user_type();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> enter_studentname(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> view_grades(<a class="code hl_class" href="class_student.html">Student</a> student);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> set_grades(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
+<a href="professor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef PROFESSOR_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define PROFESSOR_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="user_8h.html">user.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="student_8h.html">student.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="course_8h.html">course.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_professor.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_professor.html">Professor</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_user.html">User</a>                               </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//LO6. Use object-oriented encapsulation mechanisms such as interfaces and private members.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> quiz_weight = 0.20;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> exam_weight = 0.30;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> homework_weight = 0.25;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> project_weight = 0.25;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">double</span> total_weight;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> calculate_GPA(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">// PROFESSOR_H</span></div>
-<div class="ttc" id="aclass_professor_html"><div class="ttname"><a href="class_professor.html">Professor</a></div><div class="ttdef"><b>Definition:</b> professor.h:10</div></div>
-<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdef"><b>Definition:</b> student.h:8</div></div>
-<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdef"><b>Definition:</b> user.h:10</div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//default constructor</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="class_professor.html#ac6d4e54caf399a841888e60b54eed4c3">Professor</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// member methods</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_professor.html#a52bdb282b2b2e3bdc14274d7a9032d04">UserType</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_professor.html#a9012c42a0fb5e47a54c880754b6c368a">EnterStudentName</a>(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_professor.html#a271b4456551d6f81522bf16f727d0f59">ViewGrades</a>(<a class="code hl_class" href="class_student.html">Student</a> student);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_professor.html#aa8f84f3ebbc3ef542e89f14c1060665b">SetGrades</a>(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_professor.html#a728b73907cd16e30ef36a3ac9830ee9b">CalculateFinalGrade</a>(<a class="code hl_class" href="class_student.html">Student</a>&amp; student);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// PROFESSOR_H</span></div>
+<div class="ttc" id="aclass_professor_html"><div class="ttname"><a href="class_professor.html">Professor</a></div><div class="ttdoc">A Professor class that represents a user.</div><div class="ttdef"><b>Definition:</b> professor.h:23</div></div>
+<div class="ttc" id="aclass_professor_html_a271b4456551d6f81522bf16f727d0f59"><div class="ttname"><a href="class_professor.html#a271b4456551d6f81522bf16f727d0f59">Professor::ViewGrades</a></div><div class="ttdeci">void ViewGrades(Student student)</div><div class="ttdoc">Accesses student object to view student grades.</div><div class="ttdef"><b>Definition:</b> professor.cpp:58</div></div>
+<div class="ttc" id="aclass_professor_html_a52bdb282b2b2e3bdc14274d7a9032d04"><div class="ttname"><a href="class_professor.html#a52bdb282b2b2e3bdc14274d7a9032d04">Professor::UserType</a></div><div class="ttdeci">void UserType()</div><div class="ttdoc">identifies the current account type for the user.</div><div class="ttdef"><b>Definition:</b> professor.cpp:44</div></div>
+<div class="ttc" id="aclass_professor_html_a728b73907cd16e30ef36a3ac9830ee9b"><div class="ttname"><a href="class_professor.html#a728b73907cd16e30ef36a3ac9830ee9b">Professor::CalculateFinalGrade</a></div><div class="ttdeci">void CalculateFinalGrade(Student &amp;student)</div><div class="ttdoc">Calculates the final grade in the course for a student.</div><div class="ttdef"><b>Definition:</b> professor.cpp:94</div></div>
+<div class="ttc" id="aclass_professor_html_a9012c42a0fb5e47a54c880754b6c368a"><div class="ttname"><a href="class_professor.html#a9012c42a0fb5e47a54c880754b6c368a">Professor::EnterStudentName</a></div><div class="ttdeci">void EnterStudentName(Student &amp;student)</div><div class="ttdoc">Prompts user to enter the name of a student.</div><div class="ttdef"><b>Definition:</b> professor.cpp:29</div></div>
+<div class="ttc" id="aclass_professor_html_aa8f84f3ebbc3ef542e89f14c1060665b"><div class="ttname"><a href="class_professor.html#aa8f84f3ebbc3ef542e89f14c1060665b">Professor::SetGrades</a></div><div class="ttdeci">void SetGrades(Student &amp;student)</div><div class="ttdoc">allows the professor to enter grades into grade Vector in Student class</div><div class="ttdef"><b>Definition:</b> professor.cpp:75</div></div>
+<div class="ttc" id="aclass_professor_html_ac6d4e54caf399a841888e60b54eed4c3"><div class="ttname"><a href="class_professor.html#ac6d4e54caf399a841888e60b54eed4c3">Professor::Professor</a></div><div class="ttdeci">Professor()</div><div class="ttdoc">Default constructor - intializes member varaible to default value.</div><div class="ttdef"><b>Definition:</b> professor.cpp:15</div></div>
+<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdoc">A Student class that represents a user.</div><div class="ttdef"><b>Definition:</b> student.h:21</div></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdoc">A User class that can is the base class for the Student and Professor classes.</div><div class="ttdef"><b>Definition:</b> user.h:21</div></div>
+<div class="ttc" id="acourse_8h_html"><div class="ttname"><a href="course_8h.html">course.h</a></div><div class="ttdoc">Declaration of a Course class object.</div></div>
+<div class="ttc" id="astudent_8h_html"><div class="ttname"><a href="student_8h.html">student.h</a></div><div class="ttdoc">Declaration of a Student class object.</div></div>
+<div class="ttc" id="auser_8h_html"><div class="ttname"><a href="user_8h.html">user.h</a></div><div class="ttdoc">Declaration of a User class object.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_e9fe87443faea666f4af9a955ee78881.html">alexi</a></li><li class="navelem"><a class="el" href="dir_fd5fb3bc875023706250d61469f6483b.html">source</a></li><li class="navelem"><a class="el" href="dir_e10946f065eab3c37de77162fcf99a68.html">repos</a></li><li class="navelem"><a class="el" href="dir_bbcaf875def2082df368374f5bc73ba3.html">Integration-Project</a></li><li class="navelem"><b>professor.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_e9fe87443faea666f4af9a955ee78881.html">alexi</a></li><li class="navelem"><a class="el" href="dir_fd5fb3bc875023706250d61469f6483b.html">source</a></li><li class="navelem"><a class="el" href="dir_e10946f065eab3c37de77162fcf99a68.html">repos</a></li><li class="navelem"><a class="el" href="dir_bbcaf875def2082df368374f5bc73ba3.html">Integration-Project</a></li><li class="navelem"><a class="el" href="professor_8h.html">professor.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

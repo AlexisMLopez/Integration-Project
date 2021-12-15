@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['welcome_20to_20my_20integration_20project_2e_0',['Welcome to my Integration Project.',['../md__c___users_alexi_source_repos__integration__project__r_e_a_d_m_e.html',1,'']]]
+  ['setgrades_0',['SetGrades',['../class_professor.html#aa8f84f3ebbc3ef542e89f14c1060665b',1,'Professor']]],
+  ['student_1',['Student',['../class_student.html',1,'Student'],['../class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d',1,'Student::Student()']]],
+  ['student_2ecpp_2',['student.cpp',['../student_8cpp.html',1,'']]],
+  ['student_2eh_3',['student.h',['../student_8h.html',1,'']]]
 ];
