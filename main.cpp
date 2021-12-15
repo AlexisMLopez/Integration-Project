@@ -2,53 +2,65 @@
 #include "student.h"
 #include "professor.h"
 
-int professorChoice();													// prototype of function used for control flow
-int studentChoice();
-void greeting();
+// prototypes
+int ProfessorChoice();													
+int StudentChoice();
+void Greeting();
 
 /**
- * @brief 
- * @return 
+ * @brief Dictates the control flow of the program.
+ * 
+ * Utilizes fields and member methods in each distinct class (Course, User, Professor, Student) 
+ * order to record a student gradebook entry for one course. 
+ * 
+ * Each user is split between each portion of a specific control flow. (Professor or Student).
+ * 
+ * @return void
 */
 int main()
 {
-	Student student;													// Creation of an object of the Student class using default constructor
-	Professor professor;												// Creation of an object of the Professor class using default constructor
-	Course course("COP 3003");											// Creation of course class object using overloaded constructor
+	// Creation of an object of the Student class using default constructor
+	Student student;
+	// Creation of an object of the Professor class using default constructor
+	Professor professor;
+	// Creation of course class object using overloaded constructor
+	Course course("COP 3003");											
 
 	bool system_on = true;
 	int switch_input = 0;
 	int user_input = 0;
 
-	greeting();
+	Greeting();
 
 	std::cin >> switch_input;
 
 	switch (switch_input) {
 	case 1:
 		while (system_on) {
-			user_input = professorChoice();
+			user_input = ProfessorChoice();
 
 			if (user_input == 1) {
-				course.print_assignments();
-				course.print_course();
-				professor.enter_studentname(student);
-				professor.set_grades(student);							// non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
+				course.PrintAssignments();
+				course.PrintCourse();
+				professor.EnterStudentName(student);
+				professor.SetGrades(student);							
 
 			}
 			else if (user_input == 2) {
-				professor.view_grades(student);
+				professor.ViewGrades(student);
 			}
 			else if (user_input == 3) {
-				professor.calculate_final_grade(student);
+				professor.CalculateFinalGrade(student);
 
 			}
 			else if (user_input == 4) {
 				User user;
 				User& usertype2 = professor;
-				usertype2.user_type();									//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
+				//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
+				usertype2.UserType();									
 			}
 			else if (user_input == 5) {
+				// exits while loop
 				system_on = false;
 			}
 			else {
@@ -60,19 +72,21 @@ int main()
 		break;
 	case 2:
 		while (system_on) {
-			user_input = studentChoice();
+			user_input = StudentChoice();
 			if (user_input == 1) {
-				student.view_grades();
+				student.View_Grades();
 			}
 			else if (user_input == 2) {
-				professor.calculate_final_grade(student);
+				professor.CalculateFinalGrade(student);
 			}
 			else if (user_input == 3) {
 				User user;
 				User& usertype1 = student;
-				usertype1.user_type();									//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
+				//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
+				usertype1.UserType();									
 			}
 			else {
+				// exits while loop
 				system_on = false;
 			}
 		}
@@ -80,7 +94,6 @@ int main()
 	default:
 		std::cout << "You have made an incorrect login choice, terminating program." << std::endl;
 	}
-
 	std::cout << "Exiting the program." << std::endl;
 
 	return 0;
@@ -90,7 +103,7 @@ int main()
  * @brief Prompts the a student type user for a selection and uses it to dictate control flow of the program.
  * @return student_choice - student input.
 */
-int studentChoice() {
+int StudentChoice() {
 	int student_choice = 0;
 	std::cout << "Please make a selection:" << std::endl;
 	std::cout << "1: View Grades" << std::endl;
@@ -107,7 +120,7 @@ int studentChoice() {
  * @brief Prompts the a professor type user for a selection and uses it to dictate control flow of the program.
  * @return professor_choice - professor input
 */
-int professorChoice() {
+int ProfessorChoice() {
 	int professor_choice = 0;
 	std::cout << "Please make a selection:" << std::endl;
 	std::cout << "1: Enter Grades" << std::endl;
@@ -124,7 +137,7 @@ int professorChoice() {
 /**
  * @brief A simple greeting for the user, that prompts them to select if they are either a student or professor.
 */
-void greeting() {
+void Greeting() {
 	std::cout << "---------------------------------------------" << std::endl;
 	std::cout << "Welcome to the Student Gradebook Program!" << std::endl;
 	std::cout << "Please select your user type:" << std::endl;

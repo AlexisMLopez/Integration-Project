@@ -1,4 +1,10 @@
-// professor class implementation 
+/**
+* @file professor.h
+* @brief Declaration of a Professor class object.
+*
+* @author Alexis Lopez
+* @bug No known bugs.
+*/
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
 
@@ -6,7 +12,14 @@
 #include "student.h"
 #include "course.h"
 
-class Professor : public User								//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file
+/**
+ * @brief A Professor class that represents a user.
+ *
+ * This Professor class inherits fields and methods from the User class.
+ * This class also implements unique functions that only a Professor user would have access to.
+*/
+//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file
+class Professor : public User								
 {
 private:
 	//LO6. Use object-oriented encapsulation mechanisms such as interfaces and private members.
@@ -16,21 +29,15 @@ private:
 	const double project_weight = 0.25;
 	double total_weight;
 
-
 public:
-
 	//default constructor
 	Professor();
 
-
 	// member methods
-	void user_type();
-	void enter_studentname(Student& student);
-
-	void view_grades(Student student);
-	void set_grades(Student& student);
-
-	void calculate_final_grade(Student& student);
+	void UserType();
+	void EnterStudentName(Student& student);
+	void ViewGrades(Student student);
+	void SetGrades(Student& student);
+	void CalculateFinalGrade(Student& student);
 };
-
 #endif // PROFESSOR_H

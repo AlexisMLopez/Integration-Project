@@ -1,4 +1,10 @@
-// course class implementation 
+/**
+* @file course.h
+* @brief Declaration of a Course class object.
+*
+* @author Alexis Lopez
+* @bug No known bugs.
+*/
 #ifndef COURSE_H
 #define COURSE_H
 
@@ -6,22 +12,31 @@
 #include <vector>
 #include <string>
 
-class Course																			//LO1.Designand implement a class.
+/**
+ * @brief A Course class that contains course related methods and functions.
+ *
+ * Course class is the base class of the entire program. 
+ * The User class is the primary sub class of the Course class.
+ * This class contains the m_course variable for the course name.
+ * It also contains the constant assignments array that contains assignments whose contents cannot be modified
+*/
+//LO1.Design and implement a class.
+class Course
 {
 private:
-	std::string m_course;																//course that can be reassigned
+	std::string m_course;
 
 public:
-	const std::string assignments[4] = { "Quiz", "Exam", "Homework", "Project" };       //constant assignments array that contains assignments whose contents cannot be modified
+	const std::string assignments[4] = { "Quiz", "Exam", "Homework", "Project" };
 
+	//default constructor
 	Course();
 
-	Course(std::string course_name);                                                    //LO1b.Overload a constructor
+	//LO1b.Overload a constructor
+	Course(std::string course_name);
 
 	// member methods
-	void print_assignments();
-	void print_course();
-
+	void PrintAssignments();
+	void PrintCourse();
 };
-
 #endif // COURSE_H

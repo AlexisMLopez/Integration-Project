@@ -1,4 +1,10 @@
-// user class implementation
+/**
+* @file user.h
+* @brief Declaration of a User class object.
+* 
+* @author Alexis Lopez
+* @bug no known bugs.
+*/
 #ifndef USER_H 
 #define USER_H
 
@@ -7,6 +13,11 @@
 #include <vector>
 #include "course.h"
 
+/**
+ * @brief A User class that can is the base class for the Student and Professor classes
+ * 
+ * This User class is used to define fields and methods that used by all types of users. 
+*/
 class User : public Course {			
 	//private fields
 private:
@@ -14,7 +25,6 @@ private:
 	std::string m_name;
 
 public:
-
 	// default constructor
 	User();
 
@@ -29,10 +39,8 @@ public:
 	void set_name(std::string name);
 
 	// member methods
-	virtual void user_type();           // pure virtual function header makes it so the view_grades function in the User class is overriden and instead executes the subclass versions of view_grades()  
-											// Enables us to achieve dynamic dispatch which allows us to select which implementation of a polymorphic function that we want at runtime 
+	// virtual function header makes it so the view_grades function in the User class is overriden and instead executes the subclass versions of view_grades()
+	// Enables us to achieve dynamic dispatch which allows us to select which implementation of a polymorphic function that we want at runtime 
+	virtual void UserType();									
 };
-
-
-
 #endif // USER_H
