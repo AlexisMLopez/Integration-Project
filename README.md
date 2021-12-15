@@ -45,19 +45,47 @@ Alexis Lopez <br />
 
 ## Key Programming Concepts Utilized
 
-### LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
+LO1. Design and implement a class. 
+
+LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
+
+LO1a. At least one class in a header file with non-trivial methods implemented in a cpp file
+
+LO1b. Overload a constructor 
+
+LO1c. Utilize an initialization list
+
+LO2. Use subclassing to design simple class hierarchies that allow code to be reused for distinct subclasses.
+
+LO2a. Include comments describing the visibility inheritance model
+
+LO3. Correctly reason about control flow in a program using dynamic dispatch. 
+
+LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
+
+LO6. Use object-oriented encapsulation mechanisms such as interfaces and private members.
+
+LO7. Define and use iterators and other operations on aggregates, including operations that take functions as arguments. 
+
+Follow best practices for style and readability
+
+Follow best practices for documentation
+
+Include class diagrams for all classes in Readme
+
+## LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
 
 Object oriented programming is based all around objects while Procedural is based around functions. OOP has the advantage of having access to Polymorphism, Inheritance, and Encapsulation, which procedural does not. OOP is better suited to mid to large scale coding projects whilst Procedural can be done at the very small scale OOP is based entirely on reusing code without having to make drastic changes that occcurs when you edit code in procedural. OOP provides information hiding (Encapsulation) so it is safer than using procedural (private info can be used by anyone). OOP makes it possible to overload, whereas it is not possible in procedural. Without inheritance, polymorphism is impossible.The heart of polymorphism is overridding. (Sub classes will override the methods within the base class). Interface classes: no member variables and all pure virtual functions.
 
-### LO2a. Include comments describing the visibility inheritance model
+## LO2a. Include comments describing the visibility inheritance model
 
 Courses is the base class and User is the derived class to the Courses class. The User class inherits from the Courses base class as well. The Student and Professor classes are derived classes that inherit from the User class.
 
-### LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
+## LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
 
 Subtyping: is a type of polymorphism known as inclusion polymorphism. It is accessing the derived classes through the base classes with pointers and references (virtual functions are an example).
 
 Object Oriented Inheritance: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
 Other methods to achieve overriding through object oriented inheritance would include using templates.
 
-### and more! (Covered as comments in the project)
+## and more! (Covered as comments in the project)
