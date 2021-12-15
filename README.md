@@ -2,6 +2,7 @@
 
 https://amlopez5841.github.io/Integration-Project/html/
 
+//LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
 OOP vs Procedural/Functional:
 Object oriented programming is based all around objects while Procedural is based around functions.
 OOP has the advantage of having access to Polymorphism, Inheritance, and Encapsulation, which procedural does not.
@@ -13,8 +14,10 @@ Without inheritance, polymorphism is impossible
 The heart of polymorphism is overridding. (Sub classes will override the methods within the base class)
 Interface classes: no member variables and all pure virtual functions (all methods = 0)
 
+//LO2a. Include comments describing the visibility inheritance model
 Visibility inheritance model: Courses is the base class. User is a derived class that inherits from the Courses base class Student and Professor are derived classes that inherit from the User class.
 
+//LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
 Relationship between object - oriented inheritance(code - sharing and overriding) and subtyping:
 Subtyping: is a type of polymorphism known as inclusion polymorphism. It is accessing the derived classes through the base classes with pointers and references (virtual functions are an example).
 OOI: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
