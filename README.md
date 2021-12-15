@@ -42,10 +42,6 @@ Any contributions are worthwhile, the student functionality of the program has r
 
 Alexis Lopez <br /> 
 
-## History
-
-Information about what has changed. 
-
 ## Key Programming Concepts Utilized
 
 ### LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
@@ -62,3 +58,5 @@ Subtyping: is a type of polymorphism known as inclusion polymorphism. It is acce
 
 Object Oriented Inheritance: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
 Other methods to achieve overriding through object oriented inheritance would include using templates.
+
+and more!
