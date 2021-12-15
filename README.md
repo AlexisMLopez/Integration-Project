@@ -28,7 +28,8 @@ Student <br />
 
 ## Getting Started
 
-You will have to clone this github repositoty on to your own device using Visual Studio 2019. From there, nothing special has to be done to run the project.<br /> 
+You will have to clone this github repositoty on to your own device using Visual Studio 2019. From there, nothing special has to be done to run the project.
+Makse sure to run the main file with the windows debugger to start the program.<br /> 
 
 ## Built With
 
