@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>student.cpp</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Student::{ctor}</FUNCTION>
+    <DECORATED>??0Student@@QAE@XZ</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>student.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Student::view_grades</FUNCTION>
+    <DECORATED>?view_grades@Student@@QAEXXZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>student.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'Student::user_type' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>Student::user_type</FUNCTION>
+    <DECORATED>?user_type@Student@@UAEXXZ</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>student.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26436</DEFECTCODE>
+    <DESCRIPTION>The type 'class Student' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).</DESCRIPTION>
+    <FUNCTION>Student::user_type</FUNCTION>
+    <DECORATED>?user_type@Student@@UAEXXZ</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

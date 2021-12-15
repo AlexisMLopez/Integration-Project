@@ -4,7 +4,7 @@
 
 #include "user.h"
 #include "student.h"
-
+#include "course.h"
 
 class Professor : public User
 {
@@ -29,7 +29,7 @@ public:
 	void view_grades(Student student);
 	void set_grades(Student& student);
 
-	void calculate_GPA(Student& student);
+	void calculate_final_grade(Student& student);
 };
 
 #endif // PROFESSOR_H

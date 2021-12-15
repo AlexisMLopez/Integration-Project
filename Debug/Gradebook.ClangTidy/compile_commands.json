@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\alexi\\source\\repos\\Integration-Project",
+    "command": "\"C:\\WINDOWS\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/Oy- \/D CODE_ANALYSIS \/D WIN32 \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"Debug\\\\\" \/Gd \/TP   \"C:\\Users\\alexi\\source\\repos\\Integration-Project\\course.cpp\"",
+    "file": "C:\\Users\\alexi\\source\\repos\\Integration-Project\\course.cpp"
+  },
+  {
+    "directory": "C:\\Users\\alexi\\source\\repos\\Integration-Project",
+    "command": "\"C:\\WINDOWS\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/Oy- \/D CODE_ANALYSIS \/D WIN32 \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"Debug\\\\\" \/Gd \/TP   \"C:\\Users\\alexi\\source\\repos\\Integration-Project\\main.cpp\"",
+    "file": "C:\\Users\\alexi\\source\\repos\\Integration-Project\\main.cpp"
+  },
+  {
+    "directory": "C:\\Users\\alexi\\source\\repos\\Integration-Project",
+    "command": "\"C:\\WINDOWS\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/Oy- \/D CODE_ANALYSIS \/D WIN32 \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"Debug\\\\\" \/Gd \/TP   \"C:\\Users\\alexi\\source\\repos\\Integration-Project\\professor.cpp\"",
+    "file": "C:\\Users\\alexi\\source\\repos\\Integration-Project\\professor.cpp"
+  },
+  {
+    "directory": "C:\\Users\\alexi\\source\\repos\\Integration-Project",
+    "command": "\"C:\\WINDOWS\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/Oy- \/D CODE_ANALYSIS \/D WIN32 \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"Debug\\\\\" \/Gd \/TP   \"C:\\Users\\alexi\\source\\repos\\Integration-Project\\student.cpp\"",
+    "file": "C:\\Users\\alexi\\source\\repos\\Integration-Project\\student.cpp"
+  },
+  {
+    "directory": "C:\\Users\\alexi\\source\\repos\\Integration-Project",
+    "command": "\"C:\\WINDOWS\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/Oy- \/D CODE_ANALYSIS \/D WIN32 \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"Debug\\\\\" \/Gd \/TP   \"C:\\Users\\alexi\\source\\repos\\Integration-Project\\user.cpp\"",
+    "file": "C:\\Users\\alexi\\source\\repos\\Integration-Project\\user.cpp"
+  }
+]

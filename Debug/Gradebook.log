@@ -1,9 +1,3 @@
-﻿  course.cpp
-  main.cpp
-  professor.cpp
-C:\Users\alexi\source\repos\Integration-Project\professor.cpp(28,20): warning C4018: '<': signed/unsigned mismatch
-  student.cpp
-C:\Users\alexi\source\repos\Integration-Project\student.cpp(24,20): warning C4018: '<': signed/unsigned mismatch
-  user.cpp
-  Generating Code...
+﻿  professor.cpp
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
   Gradebook.vcxproj -> C:\Users\alexi\source\repos\Integration-Project\Debug\Gradebook.exe

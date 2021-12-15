@@ -1,0 +1,72 @@
+C:\Users\alexi\source\repos\Integration-Project\course.cpp:5:9: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+Course::Course()
+        ^
+Suppressed 119929 warnings (119929 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:25:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+int userChoice();                                                                                       // prototype of function used for control flow
+~~~ ^
+auto             -> int
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:27:5: warning: an exception may be thrown in function 'main' which should not throw exceptions [bugprone-exception-escape]
+int main()
+    ^
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:27:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+int main()
+~~~ ^
+auto       -> int
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:33:6: warning: variable 'user_input' is not initialized [cppcoreguidelines-init-variables]
+        int user_input;
+            ^
+                       = 0
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:109:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+int userChoice() {
+~~~ ^
+auto             -> int
+C:\Users\alexi\source\repos\Integration-Project\main.cpp:110:6: warning: variable 'choice' is not initialized [cppcoreguidelines-init-variables]
+        int choice;
+            ^
+                   = 0
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:5:26: warning: initializer for base class 'User' is redundant [readability-redundant-member-init]
+Professor::Professor() : User()                                                             //call to parent class constructor in order to change fields from child class
+                         ^~~~~~~~
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:13:17: warning: method 'enter_studentname' can be made static [readability-convert-member-functions-to-static]
+void Professor::enter_studentname(Student& student) {
+                ^
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:26:17: warning: method 'view_grades' can be made static [readability-convert-member-functions-to-static]
+void Professor::view_grades(Student student) {                                               // Unique view_grades method to Professor class
+                ^
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:28:2: warning: use range-based for loop instead [modernize-loop-convert]
+        for (int i = 0; i < student.student_grades.size(); i++) {
+        ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            (double student_grade : student.student_grades)
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:38:17: warning: method 'set_grades' can be made static [readability-convert-member-functions-to-static]
+void Professor::set_grades(Student& student) {                                              // passing student object by reference to modify values in student_grades 2D array in Student class
+                ^
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:44:9: warning: variable 'temp' is not initialized [cppcoreguidelines-init-variables]
+        double temp;
+               ^
+                    = NAN
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:57:17: warning: method 'calculate_GPA' can be made const [readability-make-member-function-const]
+void Professor::calculate_GPA(Student& student) {
+                ^
+                                                const
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp:58:9: warning: variable 'weighed_course_average' is not initialized [cppcoreguidelines-init-variables]
+        double weighed_course_average;
+               ^
+                                      = NAN
+C:\Users\alexi\source\repos\Integration-Project\student.cpp:24:2: warning: use range-based for loop instead [modernize-loop-convert]
+        for (int i = 0; i < student_grades.size(); i++) {
+        ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            (double student_grade : student_grades)
+C:\Users\alexi\source\repos\Integration-Project\user.cpp:15:12: warning: pass by value and use std::move [modernize-pass-by-value]
+User::User(std::string idnum) : m_idnum(idnum) {
+           ^
+                                        std::move( )
+C:\Users\alexi\source\repos\Integration-Project\user.cpp:20:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+std::string User::get_idnum() { return m_idnum; }
+~~~~~~~~~~~       ^
+auto                          -> std::string
+C:\Users\alexi\source\repos\Integration-Project\user.cpp:23:19: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+std::string User::get_name() { return m_name; }
+~~~~~~~~~~~       ^
+auto                         -> std::string

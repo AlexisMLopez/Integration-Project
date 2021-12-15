@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Professor::{ctor}</FUNCTION>
+    <DECORATED>??0Professor@@QAE@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'Professor::user_type' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>Professor::user_type</FUNCTION>
+    <DECORATED>?user_type@Professor@@UAEXXZ</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26436</DEFECTCODE>
+    <DESCRIPTION>The type 'class Professor' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).</DESCRIPTION>
+    <FUNCTION>Professor::user_type</FUNCTION>
+    <DECORATED>?user_type@Professor@@UAEXXZ</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>39</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Professor::view_grades</FUNCTION>
+    <DECORATED>?view_grades@Professor@@QAEXVStudent@@@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>44</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'temp' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>Professor::set_grades</FUNCTION>
+    <DECORATED>?set_grades@Professor@@QAEXAAVStudent@@@Z</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>temp</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>51</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Professor::calculate_GPA</FUNCTION>
+    <DECORATED>?calculate_GPA@Professor@@QAEXAAVStudent@@@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>95</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Professor::calculate_GPA</FUNCTION>
+    <DECORATED>?calculate_GPA@Professor@@QAEXAAVStudent@@@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Professor::calculate_GPA</FUNCTION>
+    <DECORATED>?calculate_GPA@Professor@@QAEXAAVStudent@@@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>professor.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>77</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Professor::calculate_GPA</FUNCTION>
+    <DECORATED>?calculate_GPA@Professor@@QAEXAAVStudent@@@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
