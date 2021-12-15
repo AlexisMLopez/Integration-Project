@@ -14,16 +14,20 @@ https://amlopez5841.github.io/Integration-Project/html/
 ## Diagrams
 
 Course <br /> 
-![course](https://user-images.githubusercontent.com/74120068/146275986-57666f7d-a2ba-45ba-b701-4ad36170029f.png)
+![course](https://user-images.githubusercontent.com/74120068/146281051-c1d74eab-a1de-44f4-99fb-55706b2c2344.png)
+
 
 User <br /> 
-![user](https://user-images.githubusercontent.com/74120068/146275995-196c27cd-e09c-48aa-bf78-39955d551480.png)
+![user](https://user-images.githubusercontent.com/74120068/146281062-a1edda56-21f3-4130-85be-c09b547bac93.png)
+
 
 Professor <br /> 
-![professor](https://user-images.githubusercontent.com/74120068/146276001-9d3851a0-acca-4894-a823-a2176be63550.png)
+![professor](https://user-images.githubusercontent.com/74120068/146281073-01ebe98a-c5b4-4046-a37d-f283ad89a0ba.png)
+
 
 Student <br /> 
-![student](https://user-images.githubusercontent.com/74120068/146276005-560dbe16-b13c-433e-ae3b-8e330507d037.png)
+![student](https://user-images.githubusercontent.com/74120068/146281077-8e203064-2cfc-4cc1-b2c5-527500c0153b.png)
+
 
 
 ## Getting Started
