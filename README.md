@@ -16,6 +16,7 @@ Courses is the base class and User is the derived class to the Courses class. Th
 LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
 
 Subtyping: is a type of polymorphism known as inclusion polymorphism. It is accessing the derived classes through the base classes with pointers and references (virtual functions are an example).
+
 Object Oriented Inheritance: Through subtyping this allows us to override the virtual function that we created which allows us to achieve object oriented inheritance.
 Other methods to achieve overriding through object oriented inheritance would include using templates.
 
