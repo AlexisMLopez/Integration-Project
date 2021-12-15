@@ -9,7 +9,7 @@ Professor::Professor() : User()                                                 
 
 
 
-// non-trivial methods
+//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file
 void Professor::enter_studentname(Student& student) {
 	std::cout << "Please enter the student's name:" << std::endl;
 	std::string name;
@@ -17,13 +17,13 @@ void Professor::enter_studentname(Student& student) {
 	student.set_name(name);
 }
 
-void Professor::user_type() {
+void Professor::user_type() {																//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 	std::cout << "This user is a professor!" << std::endl;
 	std::cout << std::endl;
 }
 
 
-// use of iterators on aggregates, using the advance increment to increment the iterator.
+//LO7.Define and use iteratorsand other operations on aggregates, including operations that take functions as arguments.
 void Professor::view_grades(Student student) {                                               // Unique view_grades method to Professor class
 	std::cout << "You are viewing " << student.get_name() << " grades as a Professor." << std::endl;
 	for (int i = 0; i < student.student_grades.size(); i++) {
@@ -35,7 +35,7 @@ void Professor::view_grades(Student student) {                                  
 
 
 
-// use of iterators on aggregates, using the advance increment to increment the iterator.
+//LO7.Define and use iteratorsand other operations on aggregates, including operations that take functions as arguments.
 void Professor::set_grades(Student& student) {                                              // passing student object by reference to modify values in student_grades vector in Student class
 	double temp = 0;
 	std::cout << "You are entering grades for " << student.get_name() << "." << std::endl;
@@ -48,8 +48,8 @@ void Professor::set_grades(Student& student) {                                  
 }
 
 /**
- * @brief 
- * @param student 
+ * @brief
+ * @param student
 */
 void Professor::calculate_final_grade(Student& student) {
 	double weighed_course_average = 0;

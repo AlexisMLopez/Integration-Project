@@ -6,24 +6,22 @@
 #include <vector>
 #include <string>
 
-class Course
+class Course																			//LO1.Designand implement a class.
 {
 private:
-    std::string m_course;                                                  //course that can be reassigned
+	std::string m_course;																//course that can be reassigned
 
 public:
-    const std::string assignments[4] = { "Quiz", "Exam", "Homework", "Project" };       //constant assignments array that contains assignments whose contents cannot be modified
-    //std::vector<Professor> professor_list;
-    //std::vector<Student> student_list;
+	const std::string assignments[4] = { "Quiz", "Exam", "Homework", "Project" };       //constant assignments array that contains assignments whose contents cannot be modified
 
-    Course();
+	Course();
 
-    Course(std::string course_name);                                                    //overloaded properties constructor
+	Course(std::string course_name);                                                    //LO1b.Overload a constructor
 
-    // member methods
-    void print_assignments();
-    void print_course();
-   
+	// member methods
+	void print_assignments();
+	void print_course();
+
 };
 
 #endif // COURSE_H

@@ -2,18 +2,16 @@
 #include "user.h"
 
 
-        // initializing values into static grade array 
-
 // default constructor
-User::User() 
+User::User()
 {
-    m_idnum = "Uknown";
-    m_name = "Null";
+	m_idnum = "Uknown";
+	m_name = "Null";
 }
 
-// overloaded properties constructor using list initialization
+//LO1c.Utilize an initialization list
 User::User(std::string idnum) : m_idnum(idnum) {
-    //m_idnum = idnum;
+	//m_idnum = idnum;
 }
 
 // getters and setters
@@ -25,6 +23,6 @@ void User::set_name(std::string name) { m_name = name; }
 
 
 // member methods
-void User::user_type() {}
+void User::user_type() {}									//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 
 

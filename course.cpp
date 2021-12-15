@@ -2,12 +2,12 @@
 #include "course.h"
 
 
-Course::Course() 
+Course::Course()
 {
 	m_course = "No course entered";
 }
 
-Course::Course(std::string course_name) {
+Course::Course(std::string course_name) {						//LO1b. Overload a constructor 
 	m_course = course_name;
 }
 
@@ -20,6 +20,6 @@ void Course::print_assignments() {
 }
 
 void Course::print_course() {
-	
+
 	std::cout << "For the course: " << m_course << std::endl;
 }

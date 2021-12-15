@@ -6,9 +6,10 @@
 #include "student.h"
 #include "course.h"
 
-class Professor : public User
+class Professor : public User								//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file
 {
 private:
+	//LO6. Use object-oriented encapsulation mechanisms such as interfaces and private members.
 	const double quiz_weight = 0.20;
 	const double exam_weight = 0.30;
 	const double homework_weight = 0.25;

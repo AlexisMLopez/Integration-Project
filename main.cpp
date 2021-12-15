@@ -2,10 +2,14 @@
 #include "student.h"
 #include "professor.h"
 
-int professorChoice();											// prototype of function used for control flow
+int professorChoice();													// prototype of function used for control flow
 int studentChoice();
 void greeting();
 
+/**
+ * @brief 
+ * @return 
+*/
 int main()
 {
 	Student student;													// Creation of an object of the Student class using default constructor
@@ -29,7 +33,7 @@ int main()
 				course.print_assignments();
 				course.print_course();
 				professor.enter_studentname(student);
-				professor.set_grades(student);                  // non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
+				professor.set_grades(student);							// non trivial method in Professor class that allows the professor to enter grades into grade Vector in Student class
 
 			}
 			else if (user_input == 2) {
@@ -42,7 +46,7 @@ int main()
 			else if (user_input == 4) {
 				User user;
 				User& usertype2 = professor;
-				usertype2.user_type();
+				usertype2.user_type();									//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 			}
 			else if (user_input == 5) {
 				system_on = false;
@@ -66,7 +70,7 @@ int main()
 			else if (user_input == 3) {
 				User user;
 				User& usertype1 = student;
-				usertype1.user_type();
+				usertype1.user_type();									//LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 			}
 			else {
 				system_on = false;
@@ -83,8 +87,8 @@ int main()
 }
 
 /**
- * @brief 
- * @return 
+ * @brief Prompts the a student type user for a selection and uses it to dictate control flow of the program.
+ * @return student_choice - student input.
 */
 int studentChoice() {
 	int student_choice = 0;
@@ -99,6 +103,10 @@ int studentChoice() {
 	return student_choice;
 }
 
+/**
+ * @brief Prompts the a professor type user for a selection and uses it to dictate control flow of the program.
+ * @return professor_choice - professor input
+*/
 int professorChoice() {
 	int professor_choice = 0;
 	std::cout << "Please make a selection:" << std::endl;
@@ -113,6 +121,9 @@ int professorChoice() {
 	return professor_choice;
 }
 
+/**
+ * @brief A simple greeting for the user, that prompts them to select if they are either a student or professor.
+*/
 void greeting() {
 	std::cout << "---------------------------------------------" << std::endl;
 	std::cout << "Welcome to the Student Gradebook Program!" << std::endl;
