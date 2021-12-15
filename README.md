@@ -24,4 +24,5 @@ OOI: Through subtyping this allows us to override the virtual function that we c
 Other methods to achieve overriding through object oriented inheritance would include using templates.
 
 In this project, I will be implementing OOP skills into the creation of a console application using C++. 
-![Screenshot 2021-12-15 024914](https://user-images.githubusercontent.com/74120068/146145123-5cc1038d-061c-4d2f-95cb-9041c02668c3.png)
+![Screenshot 2021-12-15 135200](https://user-images.githubusercontent.com/74120068/146247426-47a33f2c-7d0b-4e07-babc-80c434381c88.png)
+
