@@ -1,6 +1,6 @@
 # Integration Project
 
-This project is a C++ console output project. This is a student gradebook system that allows for different kinds of users to access the system. You can log in as either a student or a professor and utilize unique methods depending on the user type. The program interacts with the user through a console window, and the control flow is intuative when navigating through the different options. I worked on this project individually throught the semester, and came up with all of the design and implementation. This project was made in Fall 2021 and the my level of proficiency was at a Programming II level. It was made as a semester long assignment, and was difficul but I met the majority of the requirements diligently.
+This project is a C++ console output project. This is a student gradebook system that allows for different kinds of users to access the system. You can log in as either a student or a professor and utilize unique methods depending on the user type. The program interacts with the user through a console window, and the control flow is intuative when navigating through the different options. I worked on this project individually throught the semester, and came up with all of the design and implementation. This project was made in Fall 2021 and the my level of proficiency was at a Programming II level. It was made as a semester long assignment, and was difficul but I met the majority of the requirements diligently. <br />
 
 ## Demonstration
 
@@ -9,18 +9,22 @@ This project is a C++ console output project. This is a student gradebook system
 
 ## Documentation
 
-For Python, use the output of your docstrings. For other languages, create a docs folder in your project. If using Java, generate JavaDoc in your IDE. If using C++, use Doxygen. Change repository settings (using Settings at top of page) to use GitHub Pages with your docs folder. Add a link to the javadoc/doxygen index.html file with this markdown: \[Text to appear]\(URL) <br />
-The URL will be YourGitHubUserName.github.io/YourRepositoryName/foldername/filename<br /> 
-Do not include the docs folder name in your URL. <br />
-Sample: \[JavaDoc]\(https://pv-cop.github.io/PV-README-TEMPLATE/javadoc/index.html) <br /> <br />
-[JavaDoc](https://pv-cop.github.io/PV-README-TEMPLATE/javadoc/index.html)
+https://amlopez5841.github.io/Integration-Project/html/
 
 ## Diagrams
 
-Such as a class diagram. <br /> 
-The markdown is  \!\[Alt text\]\(relative/path/to/img.png) <br />
-For example, this image 9919.png is saved to the docs folder in my repository and the markdown is  \!\[Sample Image\](docs/9919.png) <br />
- ![Sample Image](docs/9919.png)
+Course <br /> 
+![course](https://user-images.githubusercontent.com/74120068/146275986-57666f7d-a2ba-45ba-b701-4ad36170029f.png)
+
+User <br /> 
+![user](https://user-images.githubusercontent.com/74120068/146275995-196c27cd-e09c-48aa-bf78-39955d551480.png)
+
+Professor <br /> 
+![professor](https://user-images.githubusercontent.com/74120068/146276001-9d3851a0-acca-4894-a823-a2176be63550.png)
+
+Student <br /> 
+![student](https://user-images.githubusercontent.com/74120068/146276005-560dbe16-b13c-433e-ae3b-8e330507d037.png)
+
 
 ## Getting Started
 
