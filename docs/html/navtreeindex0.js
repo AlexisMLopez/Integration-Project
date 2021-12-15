@@ -15,7 +15,7 @@ var NAVTREEINDEX0 =
 "class_professor.html#aa8f84f3ebbc3ef542e89f14c1060665b":[2,0,1,3],
 "class_professor.html#ac6d4e54caf399a841888e60b54eed4c3":[2,0,1,0],
 "class_student.html":[2,0,2],
-"class_student.html#a5c6cdca652d35aac071cb44d629f1cea":[2,0,2,2],
+"class_student.html#a01e9f952c12dc767396b058e909d7778":[2,0,2,2],
 "class_student.html#a898c07fbe19b34d03e3554da1eaf2308":[2,0,2,1],
 "class_student.html#af9168cedbfa5565cf0b20c1a9d3f5c9d":[2,0,2,0],
 "class_user.html":[2,0,3],
