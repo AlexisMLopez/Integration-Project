@@ -96,5 +96,5 @@ Other methods to achieve overriding through object oriented inheritance would in
 
 # Errors
 
-![errors](https://user-images.githubusercontent.com/74120068/146282449-cc985643-0159-443d-a897-6b55a01eb352.png)
+![warnings](https://user-images.githubusercontent.com/74120068/146286514-6175ca38-f5fe-4f1f-90d2-6a2e9483990a.png)
 
