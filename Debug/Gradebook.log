@@ -5,5 +5,62 @@ C:\Users\alexi\source\repos\Integration-Project\professor.cpp(60,20): warning C4
   student.cpp
 C:\Users\alexi\source\repos\Integration-Project\student.cpp(31,20): warning C4018: '<': signed/unsigned mismatch
   user.cpp
+  Running Code Analysis for C/C++...
   Generating Code...
+C:\Users\alexi\source\repos\Integration-Project\course.cpp(38,2): warning G4F9AAA59: use range-based for loop instead [modernize-loop-convert]
+          for (int i = 0; i < 4; i++) {
+          ^   ~~~~~~~~~~~~~~~~~~~~~~~
+              (const auto & assignment : assignments)
+C:\Users\alexi\source\repos\Integration-Project\course.cpp(39,23): warning G068ED80D: do not use array subscript when the index is not an integer constant expression; use gsl::at() instead [cppcoreguidelines-pro-bounds-constant-array-index]
+                  std::cout << "[" << assignments[i] << "]" << " ";
+                                      ^
+C:\Users\alexi\source\repos\Integration-Project\main.cpp(20,6): warning G46707FB5: an exception may be thrown in function 'main' which should not throw exceptions [bugprone-exception-escape]
+  auto main()->int
+       ^
+C:\Users\alexi\source\repos\Integration-Project\main.cpp(45,5): warning G05FB182C: static member accessed through instance [readability-static-accessed-through-instance]
+                                  professor.EnterStudentName(student);
+                                  ^~~~~~~~~~
+                                  Professor::
+  Suppressed 120527 warnings (120527 in non-user code).
+  Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Users\alexi\source\repos\Integration-Project\main.cpp(46,5): warning G05FB182C: static member accessed through instance [readability-static-accessed-through-instance]
+                                  professor.SetGrades(student);                                                   
+                                  ^~~~~~~~~~
+                                  Professor::
+C:\Users\alexi\source\repos\Integration-Project\main.cpp(50,5): warning G05FB182C: static member accessed through instance [readability-static-accessed-through-instance]
+                                  professor.ViewGrades(student);
+                                  ^~~~~~~~~~
+                                  Professor::
+C:\Users\alexi\source\repos\Integration-Project\main.cpp(62,27): warning G99EE5DD7: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers]
+                          else if (user_input == 5) {
+                                                 ^
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(15,34): warning G5641CB26: initializer for base class 'User' is redundant [readability-redundant-member-init]
+  Professor::Professor()noexcept : User()                                                             
+                                   ^~~~~~~~
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(60,2): warning G4F9AAA59: use range-based for loop instead [modernize-loop-convert]
+          for (int i = 0; i < student.student_grades.size(); i++) {
+          ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              (double student_grade : student.student_grades)
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(94,17): warning G0EB485FC: method 'CalculateFinalGrade' can be made const [readability-make-member-function-const]
+  void Professor::CalculateFinalGrade(Student& student) {
+                  ^
+                                                        const
+C:\Users\alexi\source\repos\Integration-Project\student.cpp(31,2): warning G4F9AAA59: use range-based for loop instead [modernize-loop-convert]
+          for (int i = 0; i < student_grades.size(); i++) {
+          ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              (double student_grade : student_grades)
+C:\Users\alexi\source\repos\Integration-Project\user.cpp(16,7): warning G46707FB5: an exception may be thrown in function 'User' which should not throw exceptions [bugprone-exception-escape]
+  User::User()noexcept
+        ^
   Gradebook.vcxproj -> C:\Users\alexi\source\repos\Integration-Project\Debug\Gradebook.exe
+C:\Users\alexi\source\repos\Integration-Project\course.cpp(15): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
+C:\Users\alexi\source\repos\Integration-Project\course.cpp(39): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\alexi\source\repos\Integration-Project\course.cpp(39): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(44): warning C26436: The type 'class Professor' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).
+C:\Users\alexi\source\repos\Integration-Project\professor.cpp(80): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\alexi\source\repos\Integration-Project\student.h(27): warning C26447: The function is declared 'noexcept' but calls function 'allocator<double> >()' which may throw exceptions (f.6).
+C:\Users\alexi\source\repos\Integration-Project\student.cpp(45): warning C26436: The type 'class Student' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).
+C:\Users\alexi\source\repos\Integration-Project\user.cpp(18): warning C26447: The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).
+C:\Users\alexi\source\repos\Integration-Project\user.cpp(19): warning C26447: The function is declared 'noexcept' but calls function 'operator=()' which may throw exceptions (f.6).
+C:\Users\alexi\source\repos\Integration-Project\user.cpp(49): warning C26436: The type 'class User' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).
+C:\Users\alexi\source\repos\Integration-Project\user.cpp(49): warning C26440: Function 'User::UserType' can be declared 'noexcept' (f.6).

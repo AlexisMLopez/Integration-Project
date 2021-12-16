@@ -14,7 +14,7 @@
  * Sets the final_grade variable to a default value of zero in order to 
  * mitigate posssible errors. 
 */
-Student::Student()
+Student::Student()noexcept
 {
 	final_grade = 0;
 }

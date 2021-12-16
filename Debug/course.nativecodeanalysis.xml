@@ -4,14 +4,42 @@
     <SFA>
       <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
       <FILENAME>course.cpp</FILENAME>
-      <LINE>5</LINE>
+      <LINE>15</LINE>
       <COLUMN>8</COLUMN>
     </SFA>
     <DEFECTCODE>26455</DEFECTCODE>
     <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>Course::{ctor}</FUNCTION>
     <DECORATED>??0Course@@QAE@XZ</DECORATED>
-    <FUNCLINE>5</FUNCLINE>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>course.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Course::PrintAssignments</FUNCTION>
+    <DECORATED>?PrintAssignments@Course@@QAEXXZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
+      <FILENAME>course.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>Course::PrintAssignments</FUNCTION>
+    <DECORATED>?PrintAssignments@Course@@QAEXXZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

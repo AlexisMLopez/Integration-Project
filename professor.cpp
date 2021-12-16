@@ -12,7 +12,7 @@
  * 
  * calls to the parent User class constructor to access public fields of the Student class
 */
-Professor::Professor() : User()                                                             
+Professor::Professor()noexcept : User()                                                             
 {
 	total_weight = 0;
 }

@@ -27,10 +27,10 @@ public:
 	std::vector<double> student_grades = { 0,0,0,0 };                     
 
 	// default student contructor
-	Student();
+	Student()noexcept;
 
 	// member methods
 	void ViewGrades();
-	void UserType();
+	void UserType()override;
 };
 #endif // STUDENT_H

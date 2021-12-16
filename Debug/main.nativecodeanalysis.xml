@@ -1,20 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DEFECTS>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\alexi\source\repos\Integration-Project\</FILEPATH>
-      <FILENAME>main.cpp</FILENAME>
-      <LINE>33</LINE>
-      <COLUMN>5</COLUMN>
-    </SFA>
-    <DEFECTCODE>26494</DEFECTCODE>
-    <DESCRIPTION>Variable 'user_input' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
-    <FUNCTION>main</FUNCTION>
-    <DECORATED>main</DECORATED>
-    <FUNCLINE>27</FUNCLINE>
-    <ADDITIONALINFO>
-      <targetSymbol>user_input</targetSymbol>
-    </ADDITIONALINFO>
-    <PATH></PATH>
-  </DEFECT>
-</DEFECTS>
+<DEFECTS></DEFECTS>

@@ -31,13 +31,13 @@ private:
 
 public:
 	//default constructor
-	Professor();
+	Professor()noexcept;
 
 	// member methods
-	void UserType();
-	void EnterStudentName(Student& student);
-	void ViewGrades(Student student);
-	void SetGrades(Student& student);
+	void UserType() override;
+	static void EnterStudentName(Student& student);
+	static void ViewGrades(Student student);
+	static void SetGrades(Student& student);
 	void CalculateFinalGrade(Student& student);
 };
 #endif // PROFESSOR_H

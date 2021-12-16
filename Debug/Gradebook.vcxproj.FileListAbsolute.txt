@@ -1,1 +1,3 @@
-C:\Users\alexi\Source\Repos\Integration-Project\Debug\Gradebook.exe
+C:\Users\alexi\source\repos\Integration-Project\Debug\Gradebook.exe
+C:\Users\alexi\source\repos\Integration-Project\Debug\Gradebook.exe.lastcodeanalysissucceeded
+C:\Users\alexi\source\repos\Integration-Project\Debug\NativeCodeAnalysis.read.1.tlog

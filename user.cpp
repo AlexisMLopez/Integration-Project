@@ -13,7 +13,7 @@
  * 
  * Theses variables can then be overwritten by functions in the User class. 
 */
-User::User()
+User::User()noexcept
 {
 	m_idnum = "Uknown";
 	m_name = "Null";
@@ -31,10 +31,12 @@ User::User(std::string idnum) : m_idnum(idnum) {
 }
 
 // getters and setters
-std::string User::GetIdnum() { return m_idnum; }
+//std::string User::GetIdnum() { return m_idnum; }
+auto User::GetIdnum()->std::string { return m_idnum; }
 void User::SetIdnum(std::string idnum) { m_idnum = idnum; }
 
-std::string User::GetName() { return m_name; }
+//std::string User::GetName() { return m_name; }
+auto User::GetName()->std::string { return m_name; }
 void User::SetName(std::string name) { m_name = name; }
 
 // member methods
@@ -44,4 +46,4 @@ void User::SetName(std::string name) { m_name = name; }
  * @return void
 */
 //LO3. Correctly reason about control flow in a program using dynamic dispatch. 
-void User::UserType() {}									
+void User::UserType(){}									

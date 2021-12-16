@@ -2,9 +2,9 @@
 #include "student.h"
 #include "professor.h"
 
-// prototypes
-int ProfessorChoice();													
-int StudentChoice();
+// function prototypes
+auto ProfessorChoice()->int;													
+auto StudentChoice()->int;
 void Greeting();
 
 /**
@@ -17,7 +17,7 @@ void Greeting();
  * 
  * @return void
 */
-int main()
+auto main()->int
 {
 	// Creation of an object of the Student class using default constructor
 	Student student;
@@ -103,7 +103,7 @@ int main()
  * @brief Prompts the a student type user for a selection and uses it to dictate control flow of the program.
  * @return student_choice - student input.
 */
-int StudentChoice() {
+auto StudentChoice() -> int {
 	int student_choice = 0;
 	std::cout << "Please make a selection:" << std::endl;
 	std::cout << "1: View Grades" << std::endl;
@@ -120,7 +120,7 @@ int StudentChoice() {
  * @brief Prompts the a professor type user for a selection and uses it to dictate control flow of the program.
  * @return professor_choice - professor input
 */
-int ProfessorChoice() {
+auto ProfessorChoice() -> int {
 	int professor_choice = 0;
 	std::cout << "Please make a selection:" << std::endl;
 	std::cout << "1: Enter Grades" << std::endl;
